@@ -1,30 +1,22 @@
-var React=require('react');//simple
-//import React from 'react';
-var ReactDOM= require('react-dom');
-//import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+
 const name="Saguna";
-const currDate=new Date().toLocaleDateString();
-const currTime=new Date().toLocaleTimeString();
-// const lname="Ukade";
+const img1="https://picsum.photos/200/300";
+const img2="https://picsum.photos/200/300";
+const img3="https://picsum.photos/200/300";
+const img4="https://picsum.photos/200/300";
+const links="https://picsum.photos/200/300"
 
-//array element
-//const arr=['Saguna' , 'Ukade']
 ReactDOM.render(
- // <div>
-<React.Fragment>
- 
-{/* <h1> my name is {fname} {lname}</h1>
-<h1> my name is {fname + " " + lname}</h1>
-<h1> my name is {`${fname} ${lname}`}</h1> */}
+    <>
+<h1 contentEditable="true">My Name Is {name}</h1>
+{/* <img src="https://picsum.photos/200/300" alt="RandomImeges"/> */}
+<img src={img1} alt="randomimages"/>
+<img src={img2} alt="randomimages"/>
+<img src={img3} alt="randomimages"/>
+<a href={links} target="_Saguna"></a>
+<img src={img4} alt="randomimages"/>
 
-<h1>Hello My name is {name}</h1>
-<p>Current date is={currDate}</p>
-<p>Current time is={currTime}</p>
-
-{/* <p> add of two num is {5+5}</p>
-<p> random num is {Math.random()}</p> */}
-
-</React.Fragment>
-//</div>
-,
-document.getElementById('root'));
+</>,
+document.getElementById("root"));
